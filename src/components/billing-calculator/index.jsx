@@ -23,6 +23,7 @@ export default function BillingCalculator() {
 		const willPayServiceTax = consumers.filter(
 			(consumer) => consumer.service_tax === true
 		)
+		let numberOfConsumers = {}
 
 		const message = (
 			<>
@@ -41,6 +42,11 @@ export default function BillingCalculator() {
 								return consumedProduct.costumer
 							}
 						})
+
+					numberOfConsumers = {
+						...numberOfConsumers,
+						[product.name]: consumedProduct.length,
+					}
 
 					return (
 						<div className={style.consumedProducts}>
@@ -91,11 +97,18 @@ export default function BillingCalculator() {
 						let amountToPay = 0
 						consumer.consumed.forEach(
 							(productConsumed) =>
-								(amountToPay += Number(productConsumed.amount))
+								(amountToPay +=
+									Number(productConsumed.amount) /
+									numberOfConsumers[productConsumed.name])
 						)
 
-						if (willPayServiceTax.includes(consumer.name)) {
-							amountToPay += 10
+						if (
+							willPayServiceTax.some(
+								(serviceTaxContribuitors) =>
+									serviceTaxContribuitors.name === consumer.name
+							)
+						) {
+							amountToPay += 0.1 * amountToPay
 						}
 
 						return (
