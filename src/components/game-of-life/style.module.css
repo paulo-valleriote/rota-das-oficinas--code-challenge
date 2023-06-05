@@ -1,0 +1,21 @@
+.gameOfLifeControls {
+	display: 'flex';
+	spacebetween: '10px';
+	margin: '2rem';
+	justifycontent: 'center';
+	alignitems: 'center';
+}
+
+.runButton {
+	margin-right: 1rem;
+}
+
+.resetButton {
+	margin-left: 1rem;
+}
+
+.gameOfLifeGrid {
+	width: 1rem;
+	height: 1rem;
+	border: '1px solid black';
+}

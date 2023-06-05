@@ -1,0 +1,15 @@
+.converters {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	padding: 1rem 0.5rem;
+}
+
+.arabicConverter,
+.romanConverter {
+	display: flex;
+	gap: 0.5rem;
+
+	align-items: center;
+}
