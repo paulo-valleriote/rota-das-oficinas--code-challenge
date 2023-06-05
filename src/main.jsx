@@ -30,5 +30,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<BillingCalculator />
 			</div>
 		</main>
+
+		<footer style={{ marginLeft: '2rem', marginBottom: '6rem' }}>
+			Feito por{' '}
+			<a href='https://github.com/paulo-valleriote'>Paulo Valleriote</a>
+		</footer>
 	</React.StrictMode>
 )
