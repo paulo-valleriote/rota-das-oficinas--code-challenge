@@ -3,9 +3,9 @@ Teste de programação desenvolvido para https://www.rotadasoficinas.com.br
 
 ## Iniciar a aplicação
 
-### yarn install -> yarn dev
-### OU
-### npm install -> npm run dev
+### > yarn install -> yarn dev
+#### OU
+### > npm install -> npm run dev
 
 ### Desafio 1
 Conversor de números arábicos para romanos e romanos para arábicos
