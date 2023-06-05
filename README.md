@@ -1,6 +1,8 @@
 # rota-das-oficinas--code-challenge
 Teste de programação desenvolvido para https://www.rotadasoficinas.com.br
 
+Deploy: https://rota-das-oficinas-code-challenge.vercel.app
+
 ## Iniciar a aplicação
 
 ### > yarn install -> yarn dev
